@@ -58,10 +58,10 @@
             </transition-group>
         </section>
         <footer class="footer">
-            <span class="todo-count" v-if="visibility!='完成'" v-show="doDoneNum!=0">
+            <span class="todo-count" v-if="visibility!='完成'" v-show="doDoneNum.Nodone!=0">
                 <strong>{{doDoneNum.Nodone}}</strong> 项 剩余
             </span>
-            <span class="todo-count" v-else v-show="doDoneNum!=0">
+            <span class="todo-count" v-else v-show="doDoneNum.done!=0">
                 <strong>{{doDoneNum.done}}</strong> 项 完成
             </span>
             <ul class="filters">
